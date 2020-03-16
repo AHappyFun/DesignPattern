@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/StateMechinePattern-2019.8.23/StateMechine.unity
+  isLoaded: 1
+  isActive: 1
