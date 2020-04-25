@@ -63,3 +63,5 @@ crashlytics-build.properties
 
 /Pattern/Library
 /Pattern/Temp
+/Pattern/Logs
+/Pattern/Obj
