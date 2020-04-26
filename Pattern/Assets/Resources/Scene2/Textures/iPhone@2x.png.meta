@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 72d725478619e604eb15fdc2f9ecc71a
+guid: aed09132f29657041ba998456095ded9
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -84,5 +84,5 @@ TextureImporter:
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
   userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  assetBundleName: scene2/textures
+  assetBundleVariant: ab

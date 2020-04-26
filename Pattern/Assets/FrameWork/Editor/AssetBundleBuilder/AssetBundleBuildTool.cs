@@ -4,13 +4,16 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 
+/// <summary>
+/// AB打包工具
+/// </summary>
 public class AssetBundleBuildTool 
 {
     //AB输出路径
     public static string WindowsOutPath = Application.streamingAssetsPath + "/Windows";
 
 
-    [MenuItem("Tools/打AB/Windows")]
+    [MenuItem("AssetBundle/2.打AB/Windows")]
     public static void BuildAssetBundle()
     {
         if (!Directory.Exists(WindowsOutPath))
