@@ -12,9 +12,11 @@ public class AssetBundleBuildTool
     //AB输出路径
     public static string WindowsOutPath = Application.streamingAssetsPath + "/Windows";
 
+    public static string AndroidOutPath = Application.streamingAssetsPath + "/Android";
+
 
     [MenuItem("AssetBundle/2.打AB/Windows")]
-    public static void BuildAssetBundle()
+    public static void BuildAssetBundle_Win()
     {
         if (!Directory.Exists(WindowsOutPath))
         {
@@ -28,6 +30,12 @@ public class AssetBundleBuildTool
         AssetDatabase.Refresh();
 
         Debug.Log("Build AB Windows64 Finish! ");
+
+    }
+
+    [MenuItem("AssetBundle/2.打AB/Android")]
+    public static void BuildAssetBundle_Android()
+    {
 
     }
 

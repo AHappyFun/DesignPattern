@@ -10,6 +10,8 @@ using System.IO;
 /// </summary>
 public class AssetBundleMarkTool 
 {
+    public static string AB_Resources_Path = Application.dataPath + "/" + "Resources";
+
     [MenuItem("AssetBundle/1.标记AB")]
     public static void SetABMark()
     {
@@ -20,7 +22,7 @@ public class AssetBundleMarkTool
         //清空无用AB标记
         AssetDatabase.RemoveUnusedAssetBundleNames();
 
-        needSetMarkRootDir = Application.dataPath + "/" + "Resources";
+        needSetMarkRootDir = AB_Resources_Path;
         DirectoryInfo tempDirInfo = new DirectoryInfo(needSetMarkRootDir);
         dirSceneDirArray = tempDirInfo.GetDirectories();
 
