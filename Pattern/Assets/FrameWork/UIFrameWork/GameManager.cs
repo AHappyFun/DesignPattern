@@ -10,7 +10,8 @@ public class GameManager : SingletonBase<GameManager>
     {
         Init();
 
-        UIManager.GetInstance.Open(new UITestDialog());
+        //UIManager.GetInstance.Open(new UITestDialog());
+        UIManager.GetInstance.Open("UITestDialog");
     }
 
     void Init()
