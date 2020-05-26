@@ -11,12 +11,12 @@ public class GameManager : SingletonBase<GameManager>
         Init();
 
         //UIManager.GetInstance.Open(new UITestDialog());
-        UIManager.GetInstance.Open("UITestDialog");
+        ScriptUI.UIManager.GetInstance.Open("UITestDialog");
     }
 
     void Init()
     {
-        UIManager.GetInstance.Init();
+        ScriptUI.UIManager.GetInstance.Init();
     }
 
 
@@ -24,6 +24,6 @@ public class GameManager : SingletonBase<GameManager>
     {
         float delta = Time.deltaTime;
 
-        UIManager.GetInstance.Tick(delta);
+        ScriptUI.UIManager.GetInstance.Tick(delta);
     }
 }

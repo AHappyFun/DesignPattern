@@ -92,18 +92,12 @@ public class UIDialog : UIComponent
     public override void AddListener()
     {
         base.AddListener();    
-        close_Btn.onClick.AddListener(
-            () =>
-            {
-                Close_Click(name);
-            }
-        );
     }
 
-    private static void Close_Click(string name)
+    protected virtual void Close_Click()
     {
-        Debug.Log("Close_Click" + name);
-        Type type = TypeUtils.TypeInMemory(name);
+        Debug.Log("Close_Click");
+        //Type type = TypeUtils.TypeInMemory();
     }
 }
 
@@ -162,8 +156,8 @@ public class UITestDialog: UIDialog
     public override void AddListener()
     {
         base.AddListener();
+        close_Btn.onClick.AddListener(Close_Click);
         button.onClick.AddListener(ButtonClick);
-        //close_Btn.onClick.AddListener(Close_Click);
     }
 
     public override void OnClose()
@@ -176,6 +170,11 @@ public class UITestDialog: UIDialog
     private static void ButtonClick()
     {
         Debug.Log("OKOKOKOKOK");
+    }
+
+    protected override void Close_Click()
+    {
+        base.Close_Click();
     }
 
 

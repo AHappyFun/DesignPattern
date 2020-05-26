@@ -360,6 +360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4575234292154152669}
+  - component: {fileID: 6919348224717268519}
   m_Layer: 5
   m_Name: TestPanel
   m_TagString: Untagged
@@ -390,6 +391,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6919348224717268519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5265747154052853421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7055fa5f714418d4d96535aa3a95d883, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  root: {fileID: 0}
+  Layer: {fileID: 0}
+  parentTransform: {fileID: 0}
+  parent: {fileID: 0}
+  selfTransform: {fileID: 0}
+  isVisible: 0
+  isGray: 0
+  hpTxt: {fileID: 0}
+  button: {fileID: 0}
+  image: {fileID: 0}
 --- !u!1 &6094555210700991166
 GameObject:
   m_ObjectHideFlags: 0
