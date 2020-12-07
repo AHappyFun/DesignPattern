@@ -15,7 +15,7 @@ public class AssetBundleBuildTool
     public static string AndroidOutPath = Application.streamingAssetsPath + "/Android";
 
 
-    [MenuItem("AssetBundle/2.打AB/Windows")]
+    [MenuItem("AssetBundle/2.打AB/Windows", false, 2)]
     public static void BuildAssetBundle_Win()
     {
         if (!Directory.Exists(WindowsOutPath))

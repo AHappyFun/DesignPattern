@@ -12,7 +12,7 @@ public class AssetBundleMarkTool
 {
     public static string AB_Resources_Path = Application.dataPath + "/" + "Resources";
 
-    [MenuItem("AssetBundle/1.标记AB")]
+    [MenuItem("AssetBundle/1.标记AB", false, 1)]
     public static void SetABMark()
     {
         string needSetMarkRootDir = string.Empty;
